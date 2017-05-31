@@ -25,17 +25,26 @@ section{
 	to{left: 200px;}
 }
 .ft-perfil{
-	animation: movimento 5s linear 0s infinite alternate;
+	animation: movimento 2s linear 0s infinite alternate;
 	width: 30%;
     border-radius:50%;
     
 }
 div img {
-	width: 50px;
+	width: 70px;
+
 }
-/*h1{
-	height:100px;
-}*/
-img{
-	width: 200px;
+
+
+@media (max-width: 640px) {
+	.ft-perfil{
+		width:70%;
+	}
+	@keyframes movimento{
+		from{top:-65px;}
+		to{top:-15px;}
+	}
+	div img{
+		width:40px;
+	}
 }
